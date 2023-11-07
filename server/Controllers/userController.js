@@ -33,6 +33,22 @@ const registerUser = async (req, res) => {
         .status(400)
         .json({ message: "Password must be a strong password..." });
 
+    // if (user)
+    //   return res.status(400).json({ message: "มีผู้ใช้นี้ในระบบแล้ว..." });
+
+    // if (!name || !email || !password)
+    //   return res
+    //     .status(400)
+    //     .json({ message: "กรุณากรอกข้อมูลให้ครบทุกช่อง..." });
+
+    // if (!validator.isEmail(email))
+    //   return res.status(400).json({ message: "รูปแบบ Email ไม่ถูกต้อง..." });
+
+    // if (!validator.isStrongPassword(password))
+    //   return res
+    //     .status(400)
+    //     .json({ message: "รหัสผ่านจะต้องเป็นรหัสผ่านที่รัดกุม..." });
+
     user = new userModel({ name, email, password });
 
     const salt = await bcrypt.genSalt(10);
