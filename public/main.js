@@ -106,7 +106,7 @@
       el.innerText = message;
       messageContainer.appendChild(el);
     }
-    // scroll chat to end
+    // เลื่อนแชท
     messageContainer.scrollTop =
       messageContainer.scrollHeight - messageContainer.clientHeight;
   }
