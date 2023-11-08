@@ -22,5 +22,5 @@ io.on("connection", function (socket) {
 
 const PORT = 5000 || process.env.PORT;
 server.listen(PORT, () => {
-  console.log(`Server is Running at http://localhost${port}...`);
+  console.log(`Server is Running at http://localhost${PORT}...`);
 });
